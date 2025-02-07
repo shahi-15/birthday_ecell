@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Closest Birthday</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <% if (closestBirthday) { %>
+                <h1>The closest birthday is <%= closestBirthday.name %>'s on <%= closestBirthday.bday %></h1>
+            <% } else { %>
+                <h1>No upcoming birthdays found.</h1>
+            <% } %>
+            <a href="/"><button class="back-btn">Back to Home</button></a>
+        </div>
+    </div>
+</body>
+</html>
